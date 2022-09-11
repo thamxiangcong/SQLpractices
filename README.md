@@ -1,6 +1,7 @@
 # SQL Practices using MySQL Workbench
 ## Practice 1
 Dataset from https://www.kaggle.com/datasets/jpmiller/employee-attrition-for-healthcare
+
 NB: The file was split into two: "Demographics" and "Workinfo" so that I could practise JOIN function
 1) Exploration of dataset
 2) Practice of aggregate function
