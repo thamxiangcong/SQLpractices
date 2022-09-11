@@ -32,8 +32,7 @@ select SoldAsVacant,
 CASE WHEN SoldAsVacant = 'Y' THEN 'YES' WHEN SoldAsVacant = 'N' THEN 'No'ELSE SoldAsVacant END From nashville;
 -- Update Table
 UPDATE nashville SET SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'YES' WHEN SoldAsVacant = 'N' THEN 'No'ELSE SoldAsVacant END;
--- Remove Row Duplicates (Note: this is not often used to raw data)
--- With RowNumCTE AS(Select * , ROW_NUMBER() OVER (PARTITION BY ParcelID, PropertyAddress, SalePrice, SaleDate, LegalReference ORDER BY UniqueID) row_num from nashville ORDER BY ParcelID) DELETE FROM RowNumCTE WHERE row_num > 1; --> Error received--> Error Code: 1288. The target table RowNumCTE of the DELETE is not updatable
--- Delete columns (Note: this is not often used to raw data)
+-- Practice of row_number () over (partition by)
+Select * , ROW_NUMBER() OVER (PARTITION BY ParcelID, SalePrice, SaleDate, LegalReference ORDER BY UniqueID) row_num from nashville;
 ALTER TABLE nashville DROP COLUMN PropertyAddress;
 ALTER TABLE nashville DROP COLUMN OwnerAddress;
