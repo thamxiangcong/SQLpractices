@@ -19,4 +19,4 @@ NB: It seemed that MySQL Workbench automatically remove rows that contain NULL v
 2) Practice of SUBSTRING_INDEX (aka PARSENAME in other SQL applications)
 3) Practice of ALTER TABLE (add column, drop column), UPDATE table
 4) Pratice of "CASE WHEN THEN ELSE END"
-5) Practice of ROW_NUMBER () over (PARTITION BY)
+5) Practice of Windows Function
