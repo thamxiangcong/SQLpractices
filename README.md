@@ -1,4 +1,4 @@
-# SQL Practices using MySQL Workbench
+# SQL Practices using MySQL database
 ## Practice 1
 Dataset from https://www.kaggle.com/datasets/jpmiller/employee-attrition-for-healthcare
 
