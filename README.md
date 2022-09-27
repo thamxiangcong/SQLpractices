@@ -13,8 +13,6 @@ NB: The file was split into two: "Demographics" and "Workinfo" so that I could p
 ## Practice 2
 Dataset from https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx
 
-NB: It seemed that MySQL Workbench automatically remove rows that contain NULL values. Any idea to turn off this function will be appreciated. Thank you!:)
-
 1) Finding and handling of NULL values
 2) Practice of SUBSTRING_INDEX (aka PARSENAME in other SQL applications)
 3) Practice of ALTER TABLE (add column, drop column), UPDATE table
